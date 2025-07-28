@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MySite with Quote & Membership</title>
+  <title>MySite with Quote</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -29,27 +29,46 @@
       <p class="author">– Steve Jobs</p>
     </section>
 
-    <section class="videos-list">
-      <h2>Our Videos</h2>
-      <ul>
-        <li><a href="#">Introduction to Web Development</a></li>
-        <li><a href="#">CSS Advanced Techniques</a></li>
-        <li><a href="#">JavaScript Essentials</a></li>
-        <li><a href="#">Building Responsive Sites</a></li>
+    <section class="videos padding-section bg-light">
+      <h2 class="text-center">Our Videos</h2>
+      <ul class="video-list">
+        <li>Introduction to Web Development</li>
+        <li>CSS Advanced Techniques</li>
+        <li>JavaScript Essentials</li>
+        <li>Building Responsive Sites</li>
       </ul>
     </section>
 
-    <section class="membership">
-      <h2>Become a Member</h2>
-      <p>Join our community and enjoy exclusive benefits and features.</p>
-      <ul class="membership-list">
+    <section class="membership padding-section">
+      <h2 class="text-center">Become a Member</h2>
+      <p class="membership-description text-center">Join our community and enjoy exclusive benefits and features.</p>
+      <ul class="membership-benefits">
         <li>Access to premium content</li>
         <li>Monthly newsletters</li>
         <li>Early updates and releases</li>
         <li>Special member-only events</li>
       </ul>
-      <button class="btn-signup">Sign Up Now</button>
+      <div class="membership-cta text-center">
+        <button class="signup-button">Sign Up Now</button>
+      </div>
     </section>
+
+    <section class="faq padding-section bg-light">
+      <h2 class="text-center">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3 class="faq-question">What is MySite?</h3>
+        <p class="faq-answer">MySite is a platform that offers awesome web development tutorials and resources to help you build great websites.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">How can I become a member?</h3>
+        <p class="faq-answer">You can become a member by signing up on our membership page and enjoy exclusive benefits and content.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">Do you offer support?</h3>
+        <p class="faq-answer">Yes, we provide support through our community forums and email support for premium members.</p>
+      </div>
+    </section>
+
   </main>
 
   <footer>
