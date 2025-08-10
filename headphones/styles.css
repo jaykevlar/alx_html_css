@@ -1,0 +1,129 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --primary-color: #FF6565;
+  --background-color: #fff;
+  --font-color: #333;
+  --font-family: 'Source Sans Pro', sans-serif;
+  --max-width: 1000px;
+}
+
+/* Base */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--font-color);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+  gap: 2rem;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-text p {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  opacity: 0.9;
+  outline: none;
+}
+
+/* Hero Image */
+.hero-image img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+}
