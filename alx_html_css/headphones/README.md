@@ -22,7 +22,7 @@ A responsive landing page for a fictional headphones brand, created from a provi
 - **Hover/Active Colors**:  
   - Links: `#FF6565`  
   - Buttons: opacity `0.9`
-- **Layout**: Single-column for mobile screens
+- **Layout**: Single-column for mobile screens ≤ 480px
 - **Fonts**:  
   - [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)  
   - [Spin Cycle](https://www.fonts.com/font/esselte-corporation/spin-cycle-ot)
@@ -31,4 +31,4 @@ A responsive landing page for a fictional headphones brand, created from a provi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/alx_html_css.git
+   git clone https://github.com/jaykevlar/alx_html_css.git
