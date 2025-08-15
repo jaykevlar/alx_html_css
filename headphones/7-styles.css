@@ -1,0 +1,125 @@
+/* ===== Reset CSS ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Variables ===== */
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #f2f2f2;
+  --accent-color: #ff6600;
+  --font-family: 'Arial', sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: url('images/hero-desktop.jpg') no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* ===== Navigation ===== */
+.hero__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+  color: var(--accent-color);
+}
+
+/* ===== Hero Content ===== */
+.hero__content {
+  text-align: center;
+  margin-bottom: 100px;
+  color: white;
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* fade-in animation */
+  animation-delay: 0.5s;
+}
+
+.hero__content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero__content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e65c00;
+}
+
+/* ===== Fade-in Animation ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero {
+    background: url('images/hero-mobile.jpg') no-repeat center/cover;
+    height: 80vh;
+  }
+
+  .hero__content h1 {
+    font-size: 2rem;
+  }
+
+  .hero__content p {
+    font-size: 1rem;
+  }
+
+  .hero__nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
