@@ -1,34 +1,25 @@
-# Headphones Landing Page
+# Headphones Website
 
-A responsive landing page for a fictional headphones brand, created from a provided Figma mockup. The design adapts seamlessly between desktop and mobile screens.
+## Project Overview
+This project is part of the **ALX HTML & CSS** curriculum. The goal is to build a responsive landing page for a headphones brand based on a provided [Figma design](#figma-design). The page must be pixel-perfect, accessible, and follow modern front-end best practices.
 
 ## Features
-
-- Responsive design for all devices (mobile layout for screens ≤ 480px)
-- Styled buttons with hover and active effects
-- Navigation links with hover and active color changes
-- Centered content with a maximum width of 1000px
-- Integration of Source Sans Pro and Spin Cycle fonts
-- Clean, modern aesthetic matching the Figma design
+- Fully responsive layout  
+- Mobile-first design (switches to mobile view at ≤480px)  
+- Hover/active styles for links (`#FF6565`) and buttons (opacity `0.9`)  
+- Content area max width of `1000px`, centered on the page  
 
 ## Technologies Used
+- HTML5  
+- CSS3 (Flexbox & Responsive Design)  
+- Figma for design reference  
 
-- HTML5
-- CSS3
-- Figma (design reference)
+## Figma Design
+- Original Figma file provided in the project resources  
+- Fonts used: **Source Sans Pro** and **Spin Cycle OT**  
+- Some design values were rounded from floats for simplicity  
 
-## Design Details
-
-- **Hover/Active Colors**:  
-  - Links: `#FF6565`  
-  - Buttons: opacity `0.9`
-- **Layout**: Single-column for mobile screens ≤ 480px
-- **Fonts**:  
-  - [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)  
-  - [Spin Cycle](https://www.fonts.com/font/esselte-corporation/spin-cycle-ot)
-
-## Getting Started
-
-1. Clone the repository:
+## Setup Instructions
+1. Clone this repository:  
    ```bash
    git clone https://github.com/jaykevlar/alx_html_css.git
